@@ -2,7 +2,7 @@
 
 ## Resultado desta execução
 
-- 55 testes aprovados: 48 de domínio e 7 de interface em jsdom.
+- 70 testes aprovados: 48 de cálculos, 12 de validação de formulário e 10 de interface em jsdom.
 - TypeScript e build de produção aprovados.
 - Dependências de teste instaladas: React Testing Library, user-event e jsdom.
 
@@ -10,7 +10,7 @@
 
 | Requisitos | Evidência automatizada |
 |---|---|
-| RF01–RF02 | Formulário preenchido por rótulos e seleção de categoria no teste de interface. Categoria desconhecida ainda precisa de caso específico de domínio. |
+| RF01–RF02 | Formulário preenchido por rótulos e seleção de categoria no teste de interface. Categorias desconhecidas cobertas por casos de domínio e formulário. |
 | RF03 | Extremos de faixas, idades externas, não finitas e fracionárias. |
 | RF04 | Zero, teto e salário inválido; precisão e formato monetário. |
 | RF05–RF07 | Doze extremos das seis faixas, combinação sem fator e valores esperados. |
@@ -33,8 +33,19 @@ Home e comparador observados em largura reduzida no navegador integrado. O cená
 
 Evidência visual: [comparador](evidencias/comparador.png). A captura mostra a região inicial do formulário; não substitui o registro dos resultados acima nem demonstra revisão de toda a página.
 
-## Limitações e verificações restantes
+## Encerramento da etapa 5
 
-Testes jsdom verificam comportamento, não layout real. Ainda verificar explicitamente larguras 360 e 1280, ausência de overflow, contraste, navegação completa por teclado e uso com leitor de tela. Mensagens por campo com aria-invalid ainda pendentes; o resumo de erro já recebe foco. Portanto, a revisão de acessibilidade e responsividade não está integralmente concluída.
+Revisão funcional concluída para o escopo desta entrega. Erros individuais usam aria-invalid e aria-describedby; todos os campos inválidos são identificados na submissão, sem interromper a validação no primeiro erro. O resumo recebe foco. A edição remove o erro do campo e o resultado antigo.
 
-Não foi medida cobertura percentual. Não confundir 55 testes aprovados com cobertura integral dos requisitos. CI pertence à etapa 6 e ainda não existe.
+Foram verificadas as três páginas em viewports 360×800 e 1280×900. A largura de scroll da página não excedeu o viewport (360 ou 345 no celular, 1265 no desktop, conforme presença da barra vertical). Tabelas mantêm rolagem própria. Em 360px, comparações e campos de prazo/taxa passam para uma coluna. Os principais textos auxiliares receberam cores mais escuras e há foco visível explícito.
+
+Evidências:
+
+- [Home 360](evidencias/home-360.png) e [home 1280](evidencias/home-1280.png).
+- [Acadêmico 360](evidencias/academico-360.png), [erros 360](evidencias/academico-erros-360.png) e [acadêmico 1280](evidencias/academico-1280.png).
+- [Comparador 360](evidencias/comparador-360.png) e [comparador 1280](evidencias/comparador-1280.png).
+- [Relatório JUnit de 70 testes](evidencias/testes.xml).
+
+O teste de teclado percorre seleção, idade, salário e botão e envia por Enter. O salto de conteúdo preserva a rota e move foco. A árvore de acessibilidade do navegador foi inspecionada para rótulos, mensagens e resultado. Isso não equivale a certificação de acessibilidade nem a teste com leitor de tela real. Auditoria especializada e outros navegadores são melhorias futuras, não evidências realizadas.
+
+Não foi medida cobertura percentual. CI pertence à etapa 6 e ainda não existe. Não declarar testes automatizados como cobertura integral de todos os possíveis cenários.

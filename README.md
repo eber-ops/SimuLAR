@@ -23,7 +23,7 @@ O comparador inicial não inclui indexação TR/IPCA, seguros ou tarifas e não 
 
 ## Situação
 
-Etapas 1 e 2 documentadas e organização inicial do repositório preparada. Etapa 4 implementada em versão inicial: home, calculadora acadêmica e comparador SAC/Price com gráfico e tabela. Há 28 testes de domínio. Revisão visual, testes de interface e CI são as próximas verificações.
+Etapas 1 e 2 documentadas e organização inicial do repositório preparada. Etapa 4 implementada em versão inicial: home, calculadora acadêmica e comparador SAC/Price com gráfico e tabela. Etapa 5 concluída com 70 testes, revisão visual em 360/1280 pixels e mensagens acessíveis por campo. CI é a próxima etapa.
 
 ## Executar
 
@@ -37,3 +37,5 @@ npm run dev
 Verificações: `npm test`, `npm run typecheck` e `npm run build`.
 
 Consulte [a implementação e seus limites de validação](docs/implementacao.md).
+
+Relatório da etapa 5: [testes e evidências](docs/testes-etapa-5.md).

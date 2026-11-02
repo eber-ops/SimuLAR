@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="70" failures="0" errors="0" time="2.16931">
+    <testsuite name="src/App.test.tsx" timestamp="2026-11-02T13:49:38.138Z" hostname="Eber" tests="10" failures="0" errors="0" skipped="0" time="2.1485756">
+        <testcase classname="src/App.test.tsx" name="home oferece acesso aos dois modos" time="0.1165265">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="calcula exercício e remove resultado antigo ao editar" time="0.3155448">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="explica ausência de fator sem exibir financiamento" time="0.3382377">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="não converte idade vazia em zero e permite corrigir" time="0.3438297">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="compara cenários, troca tabela e limpa ao alterar entrada" time="0.4616847">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="recusa entrada igual ao imóvel" time="0.0143369">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="mostra página inexistente e mantém retorno" time="0.0120704">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="associa mensagens ao campo inválido e limpa após correção" time="0.1123859">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="permite preencher e enviar o exercício por teclado" time="0.3751328">
+        </testcase>
+        <testcase classname="src/App.test.tsx" name="salto de conteúdo preserva rota e move foco" time="0.057589">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/domain/calculations.test.ts" timestamp="2026-11-02T13:49:38.146Z" hostname="Eber" tests="48" failures="0" errors="0" skipped="0" time="0.0140908">
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 18 anos" time="0.001819">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 35 anos" time="0.0001596">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 36 anos" time="0.0001322">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 45 anos" time="0.0001299">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 46 anos" time="0.0001321">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de masculino aos 55 anos" time="0.0001255">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 18 anos" time="0.0001521">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 30 anos" time="0.0001629">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 31 anos" time="0.000181">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 40 anos" time="0.0002103">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 41 anos" time="0.0001168">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; fator de feminino aos 50 anos" time="0.0000851">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; não inventa fator ausente" time="0.0009753">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; rejeita idade fracionária" time="0.0002227">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="modelo acadêmico &gt; aceita salário zero" time="0.0002199">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; converte centavos sem truncamento" time="0.0002108">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; rejeita " time="0.0002464">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; rejeita 1.000,00" time="0.0001568">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; rejeita 10,001" time="0.0001865">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; rejeita NaN" time="0.0001774">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="valores monetários &gt; rejeita -1" time="0.0001812">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita idade 17" time="0.0002349">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita idade 56" time="0.0001669">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita idade NaN" time="0.0001845">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita idade Infinity" time="0.000141">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita salário -1" time="0.0002027">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita salário 1000001" time="0.0001321">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita salário NaN" time="0.0001638">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita salário Infinity" time="0.000156">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; aceita teto salarial e calcula centavos" time="0.0001378">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo 0" time="0.0003237">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo -1" time="0.0001412">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo 601" time="0.0001543">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo NaN" time="0.0001363">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo Infinity" time="0.0001584">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita taxa -1" time="0.0002272">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita taxa 101" time="0.0001489">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita taxa NaN" time="0.0001472">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita taxa Infinity" time="0.0001355">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita precisão insuficiente com juros extremos e prazo longo" time="0.000505">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; liquida financiamento de um único mês" time="0.0002321">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; confere cálculo manual em dois meses" time="0.0002578">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; conserva principal e liquida saldo com taxa 0" time="0.0007062">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; conserva principal e liquida saldo com taxa 10" time="0.0005316">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; conserva principal e liquida saldo com taxa 100" time="0.0002544">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; taxa zero não gera juros" time="0.0001615">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita entrada igual ao imóvel" time="0.0001898">
+        </testcase>
+        <testcase classname="src/domain/calculations.test.ts" name="SAC e Price &gt; rejeita prazo fracionário" time="0.0002592">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/domain/formValidation.test.ts" timestamp="2026-11-02T13:49:38.154Z" hostname="Eber" tests="12" failures="0" errors="0" skipped="0" time="0.0066436">
+        <testcase classname="src/domain/formValidation.test.ts" name="aceita os dois formulários válidos" time="0.0026178">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita categoria inválida " time="0.0008951">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita categoria inválida outro" time="0.0002534">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita categoria inválida true" time="0.0001942">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita formato de idade " time="0.0001896">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita formato de idade 0x12" time="0.0001069">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita formato de idade 1e2" time="0.0001317">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="rejeita formato de idade 18.5" time="0.0001219">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="associa falta de fator à idade" time="0.0002408">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="associa erro de entrada ao campo correspondente" time="0.0002216">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="valida todos os campos de uma vez" time="0.0002166">
+        </testcase>
+        <testcase classname="src/domain/formValidation.test.ts" name="aceita taxa e salário zero explicitamente" time="0.0001916">
+        </testcase>
+    </testsuite>
+</testsuites>

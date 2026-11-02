@@ -26,3 +26,7 @@ Prévia servida em http://127.0.0.1:5173/. A abertura pelo navegador integrado f
 A implementação inicial organiza as páginas no arquivo main.tsx e o domínio em domain/calculations.ts. A extração dos componentes em arquivos separados pode ocorrer durante a revisão. O domínio usa exceções tratadas pelo formulário para validação, uma simplificação em relação ao contrato discriminado proposto na arquitetura.
 
 Mensagens de erro aparecem no resumo acessível com foco. A associação de mensagens individuais a cada campo ainda precisa ser refinada para atender integralmente aos critérios de acessibilidade. A aplicação não persiste nem envia os dados digitados.
+
+## Atualização após etapa 5
+
+A suíte cresceu para 70 testes. A revisão desktop/mobile e os erros por campo foram concluídos conforme docs/testes-etapa-5.md, que substitui as pendências históricas acima.

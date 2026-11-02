@@ -46,6 +46,8 @@ O comparador exibe primeira e última parcela, juros totais, total das prestaç�
 
 ## 6. Verificação e resultados
 
+Ferramentas: Vitest executa os cenários e as asserções, React Testing Library monta e consulta a interface por rótulos e papéis acessíveis, user-event simula preenchimento e teclado e jsdom fornece o ambiente DOM no Node. TypeScript verifica tipos e Vite produz o build. GitHub Actions automatiza essas verificações e salva as evidências. O [detalhamento das ferramentas](ferramentas-testes.md) explica exemplos, relatórios e limites de cada uma.
+
 70 testes passaram: 48 de cálculo, 12 de validação e 10 de interface. Foram usados valores de fronteira, partições de equivalência, tabela de decisão e entradas inválidas. A referência manual de principal R$ 1.000 em dois meses a 1% mensal produziu SAC de R$ 510/R$ 505 e Price de R$ 507,51/R$ 507,51. A taxa anual equivalente usada foi 12,682503013196978%.
 
 Os testes verificam soma de amortizações igual ao principal, total igual a principal mais juros, saldo final zero, centavos, taxa zero, falta de fator, correção de erro e remoção de resultado antigo. Foram corrigidos o nome acessível dos campos e o link de salto de conteúdo. Erros individuais usam atributos ARIA, e o resumo recebe foco.

@@ -34,4 +34,13 @@ npm test -- --reporter=default --reporter=junit --reporter=json --outputFile.jun
 npm run build
 ```
 
-Status da execução remota será registrado após o primeiro push da configuração.
+## Primeira execução validada
+
+- Execução: https://github.com/eber-ops/SimuLAR/actions/runs/41456858487
+- Commit: `046d4995dea68c5d295921ef1bca181c3a70e0b2`.
+- Resultado: `completed / success` no Ubuntu, em 02/11/2026.
+- Instalação limpa, verificação de tipos, testes, build e publicação dos artefatos concluídos com sucesso.
+- A mesma suíte executada localmente aprovou 70 testes e gerou JUnit e JSON.
+- [Metadados da execução e artefatos](evidencias/ci-primeira-execucao.json).
+
+Etapa 6 concluída. O workflow está na branch feature/ci-github-actions; a integração em develop/main ainda depende do fluxo de pull request e não foi realizada.

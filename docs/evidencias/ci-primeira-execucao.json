@@ -1,0 +1,19 @@
+{
+  "commit": "046d4995dea68c5d295921ef1bca181c3a70e0b2",
+  "status": "completed",
+  "url": "https://github.com/eber-ops/SimuLAR/actions/runs/41456858487",
+  "run_id": 41456858487,
+  "artifacts": [
+    {
+      "name": "simular-dist-1",
+      "size_in_bytes": 77878,
+      "expired": false
+    },
+    {
+      "name": "test-reports-1",
+      "size_in_bytes": 4353,
+      "expired": false
+    }
+  ],
+  "conclusion": "success"
+}

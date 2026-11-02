@@ -19,7 +19,10 @@ O comparador inicial não inclui indexação TR/IPCA, seguros ou tarifas e não 
 - [Dicionário de dados](docs/dicionario-dados.md)
 - [Organização do desenvolvimento](CONTRIBUTING.md)
 - [Backlog](docs/backlog.md)
-- [Apresentação de 15 minutos](apresentacao/simular-v03.pptx)
+- [Apresentação final de 15 minutos](apresentacao/simular-apresentacao-final.pptx)
+- [Relatório técnico final](docs/relatorio-final.md)
+- [Matriz de rastreabilidade](docs/rastreabilidade.md)
+- [Roteiro de demonstração](docs/roteiro-apresentacao.md)
 
 ## Situação
 
@@ -43,3 +46,7 @@ Relatório da etapa 5: [testes e evidências](docs/testes-etapa-5.md).
 ## Integração contínua
 
 O workflow [SimuLAR CI](.github/workflows/ci.yml) verifica tipos, executa testes e gera o build a cada push e pull request. Relatórios e aplicação compilada ficam disponíveis como artefatos da execução. Consulte [a documentação da etapa 6](docs/ci-etapa-6.md).
+
+## Entrega para avaliação
+
+Versão candidata `v1.0.0-rc.1`: aplicação, 70 testes, CI validada, evidências, relatório, matriz e PowerPoint de 15 minutos. A integração em develop/main por pull request e o cadastro das issues continuam pendentes. A adaptação das tecnologias do enunciado precisa de aceitação acadêmica. Esta entrega não representa uma oferta bancária ou um site já publicado.

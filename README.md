@@ -23,4 +23,17 @@ O comparador inicial não inclui indexação TR/IPCA, seguros ou tarifas e não 
 
 ## Situação
 
-Etapas 1 e 2 documentadas. Etapa 3 prepara o repositório e o fluxo de colaboração. Implementação, testes e CI serão adicionados nas etapas seguintes. Ainda não há aplicação executável nem comandos de instalação.
+Etapas 1 e 2 documentadas e organização inicial do repositório preparada. Etapa 4 implementada em versão inicial: home, calculadora acadêmica e comparador SAC/Price com gráfico e tabela. Há 28 testes de domínio. Revisão visual, testes de interface e CI são as próximas verificações.
+
+## Executar
+
+Requer Node.js 24 LTS. Com as dependências instaladas, a aplicação executa localmente no navegador.
+
+```sh
+npm ci
+npm run dev
+```
+
+Verificações: `npm test`, `npm run typecheck` e `npm run build`.
+
+Consulte [a implementação e seus limites de validação](docs/implementacao.md).

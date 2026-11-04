@@ -23,6 +23,7 @@ O comparador inicial não inclui indexação TR/IPCA, seguros ou tarifas e não 
 - [Relatório técnico final](docs/relatorio-final.md)
 - [Matriz de rastreabilidade](docs/rastreabilidade.md)
 - [Roteiro de demonstração](docs/roteiro-apresentacao.md)
+- [Roteiro completo de fala para cada slide](docs/roteiro-fala-slide-a-slide.md)
 
 ## Situação
 

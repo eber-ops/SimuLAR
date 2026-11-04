@@ -1,5 +1,7 @@
 # SimuLAR — Roteiro de 15 minutos
 
+Para ensaio e preparação, consulte o [roteiro completo de fala por slide](roteiro-fala-slide-a-slide.md), com explicações, transições e demonstração cronometrada.
+
 | Slide | Assunto | Tempo | Acumulado |
 |---|---|---:|---:|
 | 1 | Tema e objetivo | 0:30 | 0:30 |

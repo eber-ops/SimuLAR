@@ -4,16 +4,17 @@
 |---|---|---:|---:|
 | 1 | Tema e objetivo | 0:30 | 0:30 |
 | 2 | Escopo e dois modos | 1:00 | 1:30 |
-| 3 | Regras acadêmicas e decisão sem fator | 1:30 | 3:00 |
+| 3 | Regras acadêmicas | 1:30 | 3:00 |
 | 4 | SAC, Price e hipóteses | 1:30 | 4:30 |
 | 5 | Arquitetura e home real | 1:30 | 6:00 |
-| 6 | Resultados de testes | 1:30 | 7:30 |
-| 7 | CI e rastreabilidade | 1:30 | 9:00 |
-| 8 | Comparativo real da simulação | 1:30 | 10:30 |
-| 9 | Demonstração | 3:00 | 13:30 |
-| 10 | Entrega, limites e conclusão | 1:30 | 15:00 |
+| 6 | Estratégias, fronteira válida e entradas inválidas | 1:15 | 7:15 |
+| 7 | Ausência de fator e referência financeira | 1:15 | 8:30 |
+| 8 | CI e rastreabilidade | 1:30 | 10:00 |
+| 9 | Comparativo real | 1:30 | 11:30 |
+| 10 | Demonstração | 2:00 | 13:30 |
+| 11 | Entrega, limites e conclusão | 1:30 | 15:00 |
 
-Se perguntas fizerem parte do limite, reservar dois minutos reduzindo a demonstração para dois minutos e o slide 8 para 30 segundos.
+Se perguntas fizerem parte do limite, reservar dois minutos reduzindo a demonstração para um minuto e o slide 9 para 30 segundos.
 
 ## Demonstração ao vivo
 

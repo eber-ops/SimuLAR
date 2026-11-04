@@ -30,10 +30,16 @@
     "A captura é real, da home em 1280 pixels. Explicar src/App.tsx, src/domain/calculations.ts e formValidation.ts. Os componentes estão reunidos em App.tsx nesta versão. Não há backend nem persistência dos dados de simulação. Fonte: docs/arquitetura.md e docs/evidencias/home-1280.png."
   ],
   [
-    "Testes: ferramentas e resultados",
+    "Testes: estratégias e caso de fronteira",
     "Vitest: executa cenários e verifica resultados\nReact Testing Library: consulta a interface por rótulos\nuser-event: simula preenchimento, Tab e Enter\njsdom: fornece o DOM sem abrir navegador\n\n70 testes: 48 cálculos, 12 validação e 10 interface",
-    "1:30",
-    "Explique cada camada. Vitest usa describe/it/expect e it.each para fronteiras. React Testing Library renderiza App e localiza campos por rótulo e botões por papel. user-event preenche, seleciona e percorre o teclado. jsdom oferece document e foco no Node, mas não layout real. Exemplo: informar masculino/18/5000, enviar e verificar R$ 375.000,00; alterar idade e confirmar remoção do resultado. Outro exemplo soma amortizações e verifica saldo zero. JUnit e JSON registram resultados. Revisão visual foi separada em navegador real, em 360 e 1280 pixels. Não há cobertura percentual, leitor de tela real nem suíte E2E versionada. TypeScript verifica tipos, Vite compila e GitHub Actions automatiza. Fonte: docs/ferramentas-testes.md e docs/evidencias/testes.xml."
+    "1:15",
+    "Explique cada camada. Vitest usa describe/it/expect e it.each para fronteiras. React Testing Library renderiza App e localiza campos por rótulo e botões por papel. user-event preenche, seleciona e percorre o teclado. jsdom oferece document e foco no Node, mas não layout real. Exemplo: informar masculino/18/5000, enviar e verificar R$ 375.000,00; alterar idade e confirmar remoção do resultado. Outro exemplo soma amortizações e verifica saldo zero. JUnit e JSON registram resultados. Revisão visual foi separada em navegador real, em 360 e 1280 pixels. Não há cobertura percentual, leitor de tela real nem suíte E2E versionada. TypeScript verifica tipos, Vite compila e GitHub Actions automatiza. Fonte: docs/ferramentas-testes.md e docs/evidencias/testes.xml. Exibir snippet equivalente à parametrização real em calculations.test.ts. Valores no código estão em centavos. Rejeição de dados inválidos é comportamento esperado: teste aprovado, não defeito."
+  ],
+  [
+    "Testes: rejeição e referência financeira",
+    "Casos reais da suíte Vitest",
+    "1:15",
+    "Feminino 51 deve lançar erro contendo Não há fator. O caso financeiro compara listas de pagamentos SAC [51000,50500] e Price [50751,50751] em centavos com toEqual. Principal 100000 centavos, 2 meses e taxa anual equivalente a 1% mensal. Código apresentado é trecho explicativo equivalente ao teste existente. Todos os casos exibidos têm status passed em docs/evidencias/vitest-detalhado.json, execução de 04/11/2026. Não confundir erro esperado com falha de teste. Ferramentas complementares: React Testing Library, user-event e jsdom."
   ],
   [
     "CI aprovada e requisitos rastreáveis",
@@ -50,8 +56,8 @@
   [
     "Demonstração da aplicação",
     "1  Acadêmico: masculino, 18, salário 5000\n    Resultado: R$ 375.000 e fator 75\n\n2  Idade 17 e feminino 51: mensagens específicas\n\n3  Comparador: SAC e Price, gráfico e tabela mensal\n    Alterar entrada remove o resultado anterior",
-    "3:00",
-    "Executar o roteiro em docs/roteiro-apresentacao.md. Abrir aplicação antes da apresentação e deixar terminal rodando. Se a demonstração falhar, usar as capturas locais. Reservar três minutos. Não digitar dados pessoais reais."
+    "2:00",
+    "Executar o roteiro em docs/roteiro-apresentacao.md. Abrir aplicação antes da apresentação e deixar terminal rodando. Se a demonstração falhar, usar as capturas locais. Reservar dois minutos. Não digitar dados pessoais reais."
   ],
   [
     "Entrega e limites",

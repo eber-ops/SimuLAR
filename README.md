@@ -43,6 +43,8 @@ Consulte [a implementação e seus limites de validação](docs/implementacao.md
 
 Relatório da etapa 5: [testes e evidências](docs/testes-etapa-5.md).
 
+Relatório detalhado: [20 casos explicados e inventário dos 70 resultados](docs/relatorio-testes-detalhado.md). Para atualizar após uma execução que gere JSON e JUnit, execute `python docs/gerar-relatorio-testes.py` com Python 3.9+ e base de fusos horários disponível.
+
 ## Integração contínua
 
 O workflow [SimuLAR CI](.github/workflows/ci.yml) verifica tipos, executa testes e gera o build a cada push e pull request. Relatórios e aplicação compilada ficam disponíveis como artefatos da execução. Consulte [a documentação da etapa 6](docs/ci-etapa-6.md).

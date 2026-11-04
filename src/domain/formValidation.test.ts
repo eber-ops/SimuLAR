@@ -1,11 +1,37 @@
 import { expect, it } from 'vitest';
 import { validateForm, type Values } from './formValidation';
 import { academic } from './calculations';
-const valid:Values={property:'500000',entry:'100000',months:'360',annual:'10',gender:'masculino',age:'18',salary:'5000'};
-it('aceita os dois formulários válidos',()=>{expect(validateForm(valid,true)).toEqual({});expect(validateForm(valid,false)).toEqual({});});
-it.each(['','outro','true'])('rejeita categoria inválida %s',gender=>{expect(validateForm({...valid,gender},false).gender).toBeTruthy();expect(()=>academic(gender,18,0)).toThrow();});
-it.each(['','0x12','1e2','18.5'])('rejeita formato de idade %s',age=>expect(validateForm({...valid,age},false).age).toBeTruthy());
-it('associa falta de fator à idade',()=>expect(validateForm({...valid,gender:'feminino',age:'55'},false).age).toContain('Não há fator'));
-it('associa erro de entrada ao campo correspondente',()=>expect(validateForm({...valid,entry:'500000'},true).entry).toContain('menor'));
-it('valida todos os campos de uma vez',()=>expect(Object.keys(validateForm({...valid,property:'',entry:'',months:'',annual:''},true))).toEqual(['property','entry','months','annual']));
-it('aceita taxa e salário zero explicitamente',()=>{expect(validateForm({...valid,annual:'0'},true)).toEqual({});expect(validateForm({...valid,salary:'0'},false)).toEqual({});});
+const valid: Values = {
+  property: '500000',
+  entry: '100000',
+  months: '360',
+  annual: '10',
+  gender: 'masculino',
+  age: '18',
+  salary: '5000',
+};
+it('aceita os dois formulários válidos', () => {
+  expect(validateForm(valid, true)).toEqual({});
+  expect(validateForm(valid, false)).toEqual({});
+});
+it.each(['', 'outro', 'true'])('rejeita categoria inválida %s', (gender) => {
+  expect(validateForm({ ...valid, gender }, false).gender).toBeTruthy();
+  expect(() => academic(gender, 18, 0)).toThrow();
+});
+it.each(['', '0x12', '1e2', '18.5'])('rejeita formato de idade %s', (age) =>
+  expect(validateForm({ ...valid, age }, false).age).toBeTruthy(),
+);
+it('associa falta de fator à idade', () =>
+  expect(validateForm({ ...valid, gender: 'feminino', age: '55' }, false).age).toContain(
+    'Não há fator',
+  ));
+it('associa erro de entrada ao campo correspondente', () =>
+  expect(validateForm({ ...valid, entry: '500000' }, true).entry).toContain('menor'));
+it('valida todos os campos de uma vez', () =>
+  expect(
+    Object.keys(validateForm({ ...valid, property: '', entry: '', months: '', annual: '' }, true)),
+  ).toEqual(['property', 'entry', 'months', 'annual']));
+it('aceita taxa e salário zero explicitamente', () => {
+  expect(validateForm({ ...valid, annual: '0' }, true)).toEqual({});
+  expect(validateForm({ ...valid, salary: '0' }, false)).toEqual({});
+});

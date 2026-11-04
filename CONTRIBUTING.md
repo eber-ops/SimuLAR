@@ -1,5 +1,9 @@
 # Fluxo de desenvolvimento
 
+## Formatação de código
+
+O projeto usa Prettier, com dois espaços por nível, limite de referência de 100 colunas e quebra de linha LF. Execute `npm run format` para formatar código e configurações, ou `npm run format:check` para conferir o padrão. O arquivo .editorconfig também orienta o editor; scripts Python usam quatro espaços.
+
 ## Branches
 
 - `main`: versões estáveis e entregas.
